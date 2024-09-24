@@ -234,8 +234,8 @@ try:
     table.set_cols_dtype(['t', 't', 't', 't', 'a', 'a', 't', 'i', 't', 't'])
     table.add_rows([["Keychain", "Name", "Server", "Kind", "Created", "Modified", 'Protocol', "Port", "Description", "Extra"]])
     for e in final_res:
-        if len(e) < 6 or len(e) > 9:
-            print(len(e), e)
+        #if len(e) < 6 or len(e) > 9:
+        #    print(len(e), e)
         table.add_row([
                 row_item(e, 'origin'),
                 row_item(e, 'account'),
